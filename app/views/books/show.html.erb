@@ -1,6 +1,11 @@
-<h2>Title</h2>
-<p><%= @list.title %></p>
-<h2>Body</h2>
-<p><%= @list.body %></p>
-<%= link_to "編集",edit_book_path(@list.id) %>
-<%= link_to "削除", destroy__path(@list.id), method: :delete, "data-confirm" => "Are you sure?" %>
+<div class="book-l">
+ <h2 class="title"><%= @book.title %></h2>
+ <p class="book-title"><></p>
+ <h2 class="body">Body</h2>
+ <p class="book-body"><%= @book.body %></p>
+
+ <%= link_to "Edit",edit_book_path(@book.id) %>
+
+ <%= link_to "Back", books_path, class: "back" %>
+
+</div>
