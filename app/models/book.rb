@@ -1,6 +1,6 @@
 class Book < ApplicationRecord
 
-  t.string :title
-  t.string :body
+def top
+end
 
 end
