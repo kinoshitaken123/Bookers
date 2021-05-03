@@ -1,6 +1,6 @@
 class Book < ApplicationRecord
 
-def top
-end
+  validates :title, presence: true
+  validates :body, presence: true
 
 end
